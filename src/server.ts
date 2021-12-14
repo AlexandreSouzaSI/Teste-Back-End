@@ -1,17 +1,17 @@
-import './util/module-alias';
-import { Server } from '@overnightjs/core'
-import bodyParser from 'body-parser';
+// import './util/module-alias';
+// import { Server } from '@overnightjs/core'
+// import bodyParser from 'body-parser';
 
-export class SetupServer extends Server {
- constructor(private port = 4000) {
-     super();
- }
+// export class SetupServer extends Server {
+//  constructor(private port = 4000) {
+//      super();
+//  }
 
- public init(): void {
-     this.setupExpress();
- }
+//  public init(): void {
+//      this.setupExpress();
+//  }
 
- private setupExpress(): void {
-     this.app.use(bodyParser.json());
- }
-}
+//  private setupExpress(): void {
+//      this.app.use(bodyParser.json());
+//  }
+// }

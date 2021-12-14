@@ -2,10 +2,6 @@
 const comprasTest2 = async (req, res) => {
     const { valorCompra, valorPago } = req.body;
 
-    console.log(valorCompra)
-    console.log(valorPago)
-
-    
 
     var result = valorPago - valorCompra
 
