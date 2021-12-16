@@ -5,7 +5,7 @@ const palindromosTest1 = async (req, res) => {
     var { n1, n2 } = req.body;
     var numeros = [];
     var result = [];
-    var erro = "";
+    const erro = "Não á numeros Palindromos na sequencia, escolha outra !";
 
     if(n1 < n2) {
         for( ; n1 < n2; n1++){
@@ -44,7 +44,11 @@ const palindromosTest1 = async (req, res) => {
             console.log("O numero : ", numero, "Não é palindromo !" );
         }
     })
-            res.status(201).json(result);
+    if(result.length > 0){
+        res.status(201).json(result);
+    } else {
+        res.status(201).json(erro);
+    }
     }
 module.exports = {
     palindromosTest1,
